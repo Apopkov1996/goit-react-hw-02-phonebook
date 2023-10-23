@@ -64,7 +64,7 @@ export class App extends React.Component {
     const { filter } = this.state;
 
     return (
-      <div className={appcss.wrapper}>
+      <div className={appcss.wraper}>
         <h1>Phonebook</h1>
         <ContactForm addContact={this.handleAddContact} />
         <h2>Contacts </h2>
