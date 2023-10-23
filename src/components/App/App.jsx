@@ -1,8 +1,9 @@
 import React from 'react';
-import { Filter } from './Filter/Filter';
-import { ContactList } from './ContactList/ContactList';
-import { ContactForm } from './ContactForm/ContactForm';
+import { Filter } from '../Filter/Filter';
+import { ContactList } from '../ContactList/ContactList';
+import { ContactForm } from '../ContactForm/ContactForm';
 import { nanoid } from 'nanoid';
+import appcss from './app.module.css';
 
 export class App extends React.Component {
   state = {
@@ -63,7 +64,7 @@ export class App extends React.Component {
     const { filter } = this.state;
 
     return (
-      <div>
+      <div className={appcss.wrapper}>
         <h1>Phonebook</h1>
         <ContactForm addContact={this.handleAddContact} />
         <h2>Contacts </h2>
